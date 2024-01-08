@@ -8,6 +8,12 @@
 
     <div class="Website--header--bar"></div>
 
+    <div class="Website--header--menu--hamburger">
+            <div class="Website--header--menu--hamburger--line"></div>
+            <div class="Website--header--menu--hamburger--line"></div>
+            <div class="Website--header--menu--hamburger--line"></div>
+        </div>
+
     <div class="Website--header--menu">
         <ul>
             <li @if(isset($pageName) && $pageName == "home")class="Website--header--li--current"@endif><a href="{{ url('/') }}"><span>00</span> {{ __('HOME') }}</a></li>
@@ -17,4 +23,6 @@
         </ul>
     </div>    
 
+    <!-- Script js pour le header -->
+    <script src="{{ asset('js/header.js') }}"></script>
 </header>
