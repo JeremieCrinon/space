@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/destination/{subpage}', function ($subpage) {
     return view('pages/destination')->with('subpage', $subpage);
 });
+
+Route::get('/crew/{subpage}', function ($subpage) {
+    return view('pages/crew')->with('subpage', $subpage);
+});
+
+Route::get('/tech/{subpage}', function ($subpage) {
+    return view('pages/tech')->with('subpage', $subpage);
+});
