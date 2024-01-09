@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('pages/home');
 });
 
-Route::get('/destination', function () {
-    return view('pages/destination');
+Route::get('/destination/{subpage}', function ($subpage) {
+    return view('pages/destination')->with('subpage', $subpage);
 });

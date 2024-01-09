@@ -212,5 +212,16 @@
     "EXPLORE": "EXPLORER",
     "HOME": "ACCUEIL",
     "CREW": "EQUIPAGE",
-    "TECHNOLOGY": "TECHNOLOGIE"
+    "TECHNOLOGY": "TECHNOLOGIE",
+    "CHOOSE YOUR DESTINATION": "CHOISISSEZ VOTRE DESTINATION",
+    "Moon": "Lune",
+    "MOON": "LUNE",
+    "Watch our planet like you've never seen it before! A perfect place to travel, and relax, and to come back refreshed. While there, you could also visit the historics landing sites of Luna 2 and Apollo 11.": "Voyez notre planète comme vous ne l'avez jamais vue auparavant. Un parfait voayage de détente pour vous aider à prendre du recul et revenir requinquer. Pendant que vous y êtes, plangez-vous dans l'histoire en visitant les sites d'atterrissage de Luna 2 et Apollo 11.",
+    "Don't forget your hiking boots. You'll need 'em to mount on top of the Olympus mount, the solar system's highest mountain. It's twice and a half the mount Everest's height!": "N'oubliez pas vos bottes de randonnée. Vous en aurez besoin pour gravir le mont Olympus, la plus haute montagne planétaire dans notre système solaire. Il fait deux fois et demie la taille de l'Everest !",
+    "The smallest of the four Galilean moons in orbit of Jupiter, Europe is the dream of those who loves winter. It's icy surface is perfect for ice skating, curling, hockey, or just relax in your comfortable winter chalet.": "La plus petite des quatre lunes galiléennes en orbite autour de Jupiter, Europe est le rêve des amoureux de  l'hiver. Sa surface glacée est parfaite pour faire un peu de patin à glace, du curling, du hockey ou tout simplement pour vous détentre dans votre chalet hivernal.",
+    "The only known moon to have a dense atmosphere appart from earth, Titan is like home far from home(and juste a couple hundreds degres colder!). In bonus, you can admire a crasy beautiful view of the rings of Saturn!": "La seule lune connue pour avoir une atmosphère dense autre que la Terre, Titan est comme une maison loin de la maison (et juste quelques centaines de degrés plus froid !). En bonus, vous pouvez contemplez des vues saisissantes des anneaux de Saturne.",
+    "DURATION": "DURÉE",
+    "DAYS": "JOURS",
+    "MONTHS": "MOIS",
+    "YEARS": "ANS"
 }
