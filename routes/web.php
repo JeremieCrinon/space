@@ -28,3 +28,5 @@ Route::get('/crew/{subpage}', function ($subpage) {
 Route::get('/tech/{subpage}', function ($subpage) {
     return view('pages/tech')->with('subpage', $subpage);
 });
+
+Route::name('language')->get('language/{lang}', 'HomeController@language');
