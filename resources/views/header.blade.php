@@ -20,6 +20,9 @@
             <li @if(isset($pageName) && $pageName == "destination")class="Website--header--li--current"@endif><a href="{{ url('/destination/moon') }}"><span>01</span> DESTINATION</a></li>
             <li @if(isset($pageName) && $pageName == "crew")class="Website--header--li--current"@endif><a href="{{ url('/crew/commander') }}"><span>02</span> {{ __('CREW') }}</a></li>
             <li @if(isset($pageName) && $pageName == "tech")class="Website--header--li--current"@endif><a href="{{ url('/tech/Launcher') }}"><span>03</span> {{ __('TECHNOLOGY') }}</a></li>
+            <a class="Website--header--language" href="{{ route('language.switch', 'en') }}">English</a>
+            <a class="Website--header--language" href="{{ route('language.switch', 'fr') }}">Français</a>
+
         </ul>
     </div>    
 

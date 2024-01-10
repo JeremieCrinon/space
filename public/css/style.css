@@ -101,11 +101,15 @@ html{
     opacity: 0.5;
 }
 
+.Website--header--language{
+    margin: 0 2%;
+}
+
 /*Responsive*/
 
 /* Tablet */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 940px){
     .Website--header--logo{
         width: 6.2%;
         padding: 24px 0;
@@ -147,7 +151,7 @@ html{
 /* Tablet */
 
 /* Mobile */
-@media screen and (max-width: 450px){
+@media screen and (max-width: 670px){
     .Website--header--menu{
         display: none;
     }
@@ -214,6 +218,11 @@ html{
         height: 80%;
         top: -3px;
         right: 0;
+    }
+
+    .Website--header--language{
+        margin-left: 14%;
+        margin-top: 20px;
     }
 
 }
