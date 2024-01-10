@@ -4,13 +4,13 @@
 
         @include('header', ['pageName' => "home"])
 
-        <section class="Home--title--container">
+        <section class="Home--title--container" role="main">
             <h1 class="Home--title">{{ __('SO YOU WANNA TRAVEL TO ') }}<br><strong>{{ __('SPACE') }}</strong></h1>
             <p class="Home--undertitle">{{ __('Let\'s be real; if you want to go to space, you could go to the real space and not just the border of it! Well, just sit here, cause we\'re gonna give you a trully crazy experience! ') }}</p>
         </section>
 
         <section class="Home--main_button">
-            <a href="#" class="Home--main_button--link">{{ __('EXPLORE') }}</a>
+            <a role="button" href="#" class="Home--main_button--link">{{ __('EXPLORE') }}</a>
         </section>
 
 

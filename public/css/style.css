@@ -225,6 +225,27 @@ html{
         margin-top: 20px;
     }
 
+    .Website--header--menu--hamburger--active{
+        aspect-ratio: 1/1;
+        margin-top: 15px;
+    }
+
+    .Website--header--menu--hamburger--active .Website--header--menu--hamburger--line:nth-child(1){
+        transform: rotate(45deg);
+        /* margin-top: 0; */
+        position: absolute;
+    }
+    
+    .Website--header--menu--hamburger--active .Website--header--menu--hamburger--line:nth-child(2){
+        transform: rotate(-45deg);
+        /* margin-top: 0; */
+        position: absolute;
+    }
+    
+    .Website--header--menu--hamburger--active .Website--header--menu--hamburger--line:nth-child(3){
+        display: none;
+    }
+
 }
 /* Mobile */
 

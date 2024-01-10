@@ -3,13 +3,13 @@
         @include('header', ['pageName' => "tech"])
 
         <h1 class="Destination--title"><span>03</span>{{ __('SPACE LAUNCHER 101') }}</h1><!-- Je remets la même class que pour destination, car le titre est le même -->
-        <section class="Tech--text">
+        <section class="Tech--text" role="main">
             @if(isset($subpage) && $subpage == "spaceport")
-                <nav class="Tech--text--nav">
+                <nav class="Tech--text--nav" role="navigation">
                     <ul>
-                        <li><a class="Tech--text--nav--link" href="{{ url('/tech/launcher') }}">1</a></li>
-                        <li><a class="Tech--text--nav--link Tech--text--nav--link--current" href="{{ url('/tech/spaceport') }}">2</a></li>
-                        <li><a class="Tech--text--nav--link" href="{{ url('/tech/space_capsule') }}">3</a></li>
+                        <li><a class="Tech--text--nav--link" href="{{ url('/tech/launcher') }}" role="button">1</a></li>
+                        <li><a class="Tech--text--nav--link Tech--text--nav--link--current" href="{{ url('/tech/spaceport') }}" role="button">2</a></li>
+                        <li><a class="Tech--text--nav--link" href="{{ url('/tech/space_capsule') }}" role="button">3</a></li>
                     </ul>
                 </nav>
                 <div class="Tech--text--infos">
@@ -19,11 +19,11 @@
                 </div>
                 
             @elseif(isset($subpage) && $subpage == "space_capsule")
-                <nav class="Tech--text--nav">
+                <nav class="Tech--text--nav" role="navigation">
                     <ul>
-                        <li><a class="Tech--text--nav--link" href="{{ url('/tech/launcher') }}">1</a></li>
-                        <li><a class="Tech--text--nav--link" href="{{ url('/tech/spaceport') }}">2</a></li>
-                        <li><a class="Tech--text--nav--link Tech--text--nav--link--current" href="{{ url('/tech/space_capsule') }}">3</a></li>
+                        <li><a class="Tech--text--nav--link" href="{{ url('/tech/launcher') }}" role="button">1</a></li>
+                        <li><a class="Tech--text--nav--link" href="{{ url('/tech/spaceport') }}" role="button">2</a></li>
+                        <li><a class="Tech--text--nav--link Tech--text--nav--link--current" href="{{ url('/tech/space_capsule') }}" role="button">3</a></li>
                     </ul>
                 </nav>
                 <div class="Tech--text--infos">
@@ -33,11 +33,11 @@
                 </div>
                 
             @else
-                <nav class="Tech--text--nav">
+                <nav class="Tech--text--nav" role="navigation">
                     <ul>
-                        <li><a class="Tech--text--nav--link Tech--text--nav--link--current" href="{{ url('/tech/launcher') }}">1</a></li>
-                        <li><a class="Tech--text--nav--link" href="{{ url('/tech/spaceport') }}">2</a></li>
-                        <li><a class="Tech--text--nav--link" href="{{ url('/tech/space_capsule') }}">3</a></li>
+                        <li><a class="Tech--text--nav--link Tech--text--nav--link--current" href="{{ url('/tech/launcher') }}" role="button">1</a></li>
+                        <li><a class="Tech--text--nav--link" href="{{ url('/tech/spaceport') }}" role="button">2</a></li>
+                        <li><a class="Tech--text--nav--link" href="{{ url('/tech/space_capsule') }}" role="button">3</a></li>
                     </ul>
                 </nav>
                 <div class="Tech--text--infos">
@@ -50,11 +50,11 @@
         </section>
         <section class="Tech--img">
             @if(isset($subpage) && $subpage == "spaceport")
-                <img class="Tech--img--image" src="{{ asset('img/spaceport.png') }}" alt="Spaceport">
+                <img aria-hidden="true" class="Tech--img--image" src="{{ asset('img/spaceport.png') }}" alt="Spaceport">
             @elseif(isset($subpage) && $subpage == "space_capsule")
-                <img class="Tech--img--image" src="{{ asset('img/space_capsule.png') }}" alt="Space Capsule">
+                <img aria-hidden="true" class="Tech--img--image" src="{{ asset('img/space_capsule.png') }}" alt="Space Capsule">
             @else
-                <img class="Tech--img--image" src="{{ asset('img/launcher.png') }}" alt="Launcher">
+                <img aria-hidden="true" class="Tech--img--image" src="{{ asset('img/launcher.png') }}" alt="Launcher">
             @endif
         </section>
     </body>

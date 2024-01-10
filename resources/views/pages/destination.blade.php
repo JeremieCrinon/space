@@ -6,30 +6,30 @@
 
         @if(isset($subpage) && $subpage == "moon")
 
-            <img src="{{ asset('img/moon.png') }}" alt="Moon" class="Destination--img">
+            <img aria-hidden="true" src="{{ asset('img/moon.png') }}" alt="Moon" class="Destination--img">
 
         @elseif(isset($subpage) && $subpage == "mars")
         
 
-            <img src="{{ asset('img/mars.png') }}" alt="Mars" class="Destination--img">
+            <img aria-hidden="true" src="{{ asset('img/mars.png') }}" alt="Mars" class="Destination--img">
 
         @elseif(isset($subpage) && $subpage == "europe")
 
-            <img src="{{ asset('img/europe.png') }}" alt="Europe" class="Destination--img">
+            <img aria-hidden="true" src="{{ asset('img/europe.png') }}" alt="Europe" class="Destination--img">
 
         @elseif(isset($subpage) && $subpage == "titan")
 
-            <img src="{{ asset('img/titan.png') }}" alt="Titan" class="Destination--img">
+            <img aria-hidden="true" src="{{ asset('img/titan.png') }}" alt="Titan" class="Destination--img">
 
         @else
             
-            <img src="{{ asset('img/moon.png') }}" alt="Moon" class="Destination--img">
+            <img aria-hidden="true" src="{{ asset('img/moon.png') }}" alt="Moon" class="Destination--img">
 
         @endif
 
-        <section class="Destination--text">
+        <section class="Destination--text" role="main">
             @if(isset($subpage) && $subpage == "moon")
-                <nav class="Destination--nav">
+                <nav class="Destination--nav" role="navigation">
                     <a href="{{ url('/destination/moon') }}" class="Destination--nav__link Destination--nav__link__current">{{ __('Moon') }}</a>
                     <a href="{{ url('/destination/mars') }}" class="Destination--nav__link">{{ __('Mars') }}</a>
                     <a href="{{ url('/destination/europe') }}" class="Destination--nav__link">{{ __('Europe') }}</a>
