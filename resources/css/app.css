@@ -1248,7 +1248,89 @@ html{
 /* Back office public */
 /* Partie back office qui est visible publiquement (connexion et enregistrement) */
 
+/* Partie communne à toutes les pages */
 .Guest--back_office--body{
-    background-color: #000;
+    background-image: url(../../public/img/Home_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
+/* Partie communne à toutes les pages */
+
+/* Register */
+.Register--title{
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Register--subtitle{
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.Register--form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    width: 35%;
+    margin-left: 32.5%;
+}
+
+.Register--form--input{
+    display: block;
+    width: 40%;
+    /* margin-bottom: 20px; */
+}
+
+.Register--form--label{
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.Register--form--buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Register--form--buttons--link{
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.Register--form--buttons--link:hover{
+    text-decoration: underline;
+}
+
+.Register--form ul li{
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+/* Register */
 /* Back office public */
