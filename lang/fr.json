@@ -242,5 +242,13 @@
     "A spaceport is a launching (or landing) site of space machines, by analogy to seaports for boats or airport for aircrafts. Based at the famous Cap Canaveral, our space port is idealy placed to benefit from the earths rotation for the launching.": "Un spatioport ou cosmodrome est un site de lancement (ou de réception) d’engins spatiaux, par analogie avec le port maritime pour les navires ou l’aéroport pour les aéronefs. Basé au célèbre Cap Canaveral, notre spatioport est idéalement situé pour profiter de la rotation de la Terre pour le lancement.",
     "A space capsule is a habitable space contraption that uses a capsule with a blunt body to enter the earth's athmosphere without wings. Our capsule is the place where you will all your time during the flight. It contains a gym, a cinema, et many other activities to entertain yourself.": "Une capsule spatiale est un engin spatial habitable qui utilise une capsule à corps émoussé pour rentrer dans l’atmosphère terrestre sans ailes. Notre capsule est l’endroit où vous passerez votre temps pendant le vol. Il comprend une salle de gym, un cinéma et de nombreuses autres activités pour vous divertir.",
     "REGISTER": "Créer un compte",
-    "Please create an account for the admin. Only one account can be created. Do not make the website public before having created an account.": "Veuillez créer un compte pour l'administrateur. Un seul compte peut être créé. Ne rendez pas le site public avant d'avoir créé un compte."
+    "Please create an account for the admin. Only one account can be created. Do not make the website public before having created an account.": "Veuillez créer un compte pour l'administrateur. Un seul compte peut être créé. Ne rendez pas le site public avant d'avoir créé un compte.",
+    "Log in": "Se connecter",
+    "Forgot your password?": "Mot de passe oublié ?",
+    "Remember me": "Se souvenir de moi",
+    "Register": "Créer un compte",
+    "Already registered?": "Vous avez déjà un compte ?",
+    "Password": "Mot de passe",
+    "Name": "Nom",
+    "Confirm Password": "Confirmer le mot de passe"
 }
