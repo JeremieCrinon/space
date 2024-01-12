@@ -7,23 +7,23 @@
         @csrf
 
         <!-- Name -->
-        <label for="name" class="Register--form--label">{{ __('Name') }}</label>
+        <x-input-label for="name" class="Register--form--label">{{ __('Name') }}</x-input-label>
         <x-text-input id="name" class="Register--form--input" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
         <x-input-error :messages="$errors->get('name')" class="mt-2" />
 
         <!-- Email Address --> 
-        <label for="email" class="Register--form--label">{{ __('Email') }}</label>
+        <x-input-label for="email" class="Register--form--label">{{ __('Email') }}</x-input-label>
         <x-text-input id="email"  class="Register--form--input" type="email" name="email" :value="old('email')" required autocomplete="username" />
         <x-input-error :messages="$errors->get('email')" class="mt-2" />
 
 
         <!-- Password -->
-        <label for="password" class="Register--form--label">{{ __('Password') }}</label>
+        <x-input-label for="password" class="Register--form--label">{{ __('Password') }}</x-input-label>
         <x-text-input id="password" class="Register--form--input" type="password" name="password" required autocomplete="new-password" />
         <x-input-error :messages="$errors->get('password')" class="mt-2" />
 
         <!-- Confirm Password -->
-        <label for="password_confirmation" class="Register--form--label">{{ __('Confirm Password') }}</label>
+        <x-input-label for="password_confirmation" class="Register--form--label">{{ __('Confirm Password') }}</x-input-label>
         <x-text-input id="password_confirmation" class="Register--form--input" type="password" name="password_confirmation" required autocomplete="new-password" />
         <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
 

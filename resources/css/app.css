@@ -1258,7 +1258,7 @@ html{
 }
 /* Partie communne à toutes les pages */
 
-/* Register */
+/* Register et un peu login */
 .Register--title{
     color: #FFF;
     font-family: 'Barlow Condensed', sans-serif;
@@ -1278,7 +1278,7 @@ html{
     margin-left: 35%;
 }
 
-.Register--form{
+.Register--form, .Login--form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1287,13 +1287,13 @@ html{
     margin-left: 32.5%;
 }
 
-.Register--form--input{
+.Register--form--input, .Login--form--input{
     display: block;
     width: 40%;
     /* margin-bottom: 20px; */
 }
 
-.Register--form--label{
+.Register--form--label, .Login--form--label{
     color: #FFF;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.6rem;
@@ -1311,7 +1311,7 @@ html{
     margin-bottom: 40px;
 }
 
-.Register--form--buttons--link{
+.Register--form--buttons--link, .Login--form--buttons--link{
     color: #FFF;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.6rem;
@@ -1319,7 +1319,7 @@ html{
     text-decoration: none;
 }
 
-.Register--form--buttons--link:hover{
+.Register--form--buttons--link:hover, .Login--form--buttons--link:hover{
     text-decoration: underline;
 }
 
@@ -1332,5 +1332,15 @@ html{
     margin-bottom: 10px;
 }
 
-/* Register */
+/* Register et un peu login */
+
+/* Login */
+.Login--form--remember_me{
+    display: block;
+    width: 15px;
+    aspect-ratio: 1/1;
+
+}
+
+/* Login */
 /* Back office public */
