@@ -13,6 +13,10 @@ html{
     font-size: 62.5%;
 }
 
+.hidden{
+    display: none;
+}
+
 /* Header */
 
 .Website--header{
@@ -1344,4 +1348,113 @@ html{
 }
 
 /* Login */
+
+/* Confirmer l'email */
+.Verify_email--title{
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.Verify_email--text{
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.Verify_email--new_link{
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.Verify_email--form_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.Verify_email--form{
+    margin: 10px 0;
+}
+
+.Verify_email--button_destroy_profile{
+    margin: 5px 0;
+}
+
+.Verify_email--button{
+    background-color: transparent;
+    color: #FFF;
+    border: 1px solid #FFF;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.Verify_email--button:hover{
+    background-color: #FFF;
+    color: #0B0D17;
+}
+
+.Verify_email--button_destroy_profile--active{
+    background-color: #FFF;
+    color: #0B0D17;
+}
+
+.Verify_email--form--confirm_delete--title{
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.Verify_email--form--confirm_delete--subtitle{
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+}
+
+.Verify_email--form--confirm_delete--password{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Verify_email--form--confirm_delete--password--input{
+    background-color: transparent;
+    color: #FFF;
+    border: 1px solid #FFF;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.Verify_email--form--confirm_delete--confirm_button{
+    margin-left: 42.5%;
+    width: 15%;
+}
+
+/* Confirmer l'email */
 /* Back office public */
