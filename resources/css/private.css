@@ -137,6 +137,29 @@
     border: 1px solid #FFF;
 }
 
+.Edit_profile--logout{
+    width: 60%;
+    margin-left: 20%;
+}
+
+.Edit_profile--logout--button{
+    width: 30%;
+    margin-left: 35%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.Edit_profile--logout--button:hover{
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+
 /* Modif profile */
 
 /* Profile */
