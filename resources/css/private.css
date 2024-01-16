@@ -46,6 +46,101 @@
 }
 /* Dashboard */
 
+/* Profile */
+
+.Edit_profile--container{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+/* Modif passwd */
+.Profile--password_update{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    
+}
+
+.Profile--password_update--input{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.Profile--password_update--confirm{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.Profile--password_update--confirm:hover{
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+/* Modif passwd */
+
+/* Modif profile */
+
+.Profile--profile_update{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.Profile--profile_update--input{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding-left: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.Profile--profile_update--confirm{
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.Profile--profile_update--confirm:hover{
+    background-color: #000;
+    color: #FFF;
+    border: 1px solid #FFF;
+}
+
+/* Modif profile */
+
+/* Profile */
+
 /* Edit */
 .Edit--title{
     color: #FFF;
@@ -65,3 +160,5 @@
     margin-left: 20%;
     margin-top: 2rem;
 }
+
+/* Edit */
