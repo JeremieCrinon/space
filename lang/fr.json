@@ -258,5 +258,20 @@
     "Delete Account": "Supprimer le compte",
     "Verify email": "Vérifier l'adresse e-mail",
     "Are you sure you want to delete your account?": "Êtes-vous sûr de vouloir supprimer votre compte ?",
-    "Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.": "Une fois votre compte supprimé, toutes ses ressources et données seront définitivement supprimées. Veuillez saisir votre mot de passe pour confirmer que vous souhaitez supprimer définitivement votre compte."
+    "Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.": "Une fois votre compte supprimé, toutes ses ressources et données seront définitivement supprimées. Veuillez saisir votre mot de passe pour confirmer que vous souhaitez supprimer définitivement votre compte.",
+    "Hi, administrator!": "Bonjour, administrateur !",
+    "Welcome to your dashboard! Here, you can edit part of the content of the website! Hope you'll find everything you want easily. Good day, administrator!": "Bienvenue sur votre tableau de bord ! Ici, vous pouvez modifier une partie du contenu du site web ! En espérant que vous trouverez facilement tout ce que vous voulez. Bonne journée, administrateur !",
+    "PUBLIC PART": "PARTIE PUBLIQUE",
+    "EDIT CONTENT": "MODIFIER LE CONTENU",
+    "Edit the website": "Modifier le site web",
+    "Welcome to the edit page. In this page, you can edit part of the website!": "Bienvenue sur la page de modification. Grace à cette page, vous pouvez modifier une partie du site web !",
+    "Name in french": "Nom en français",
+    "Create a planet": "Créer une planète",
+    "Welcome to the create planet page. In this page, you can create a planet that will be displayed in the website!": "Bienvenue sur la page de création de planète. Grace à cette page, vous pouvez créer une planète qui sera affichée sur le site web !",
+    "Name in english": "Nom en anglais",
+    "Description in french": "Description en français",
+    "Description in english": "Description en anglais",
+    "Distance": "Distance",
+    "Time": "Temps",
+    "Image": "Image"
 }

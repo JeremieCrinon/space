@@ -1,0 +1,67 @@
+/* Partie commune à toutes les pages */
+/*Background*/
+.Private--html{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.Private--body{
+    background-image: url(../../public/img/Home_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* Background */
+
+/* Responsive */
+@media screen and (max-width: 768px){
+    .Private--body{
+        background-image: url(../../public/img/Home_background_tablet.png);
+    }
+}
+/* Responsive */
+/* Partie commune à toutes les pages */
+
+/* Dashboard */
+.Dashboard--title{
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.Dashboard--description{
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2rem;
+}
+/* Dashboard */
+
+/* Edit */
+.Edit--title{
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.Edit--description{
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 2rem;
+}
