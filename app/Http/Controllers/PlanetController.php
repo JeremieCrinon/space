@@ -60,7 +60,13 @@ class PlanetController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $planet = Planet::find($id);
+        if (!$planet) {
+            // Gérer le cas où la planète n'est pas trouvée
+            abort(404);
+        }
+        $planets = Planet::all();
+        return view('pages.destination', compact('planet', 'planets'));
     }
 
     /**

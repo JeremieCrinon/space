@@ -637,6 +637,7 @@ html{
     font-size: 10rem;
     font-weight: 400;
     margin-top: 52px;
+    text-transform: uppercase;
 }
 
 .Destination--text__p{
