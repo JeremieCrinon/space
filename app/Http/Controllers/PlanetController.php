@@ -32,8 +32,8 @@ class PlanetController extends Controller
         $data = $request->validate([
             'fr_name' => 'required|max:20',
             'en_name' => 'required|max:20',
-            'fr_description' => 'required|max:255',
-            'en_description' => 'required|max:255',
+            'fr_description' => 'required|max:500',
+            'en_description' => 'required|max:500',
             'distance' => 'required|max:20',
             'time' => 'required|max:20',
             'image' => 'required|image',
