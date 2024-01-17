@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Planet;
+use Illuminate\Support\Facades\Storage;
 
 class PlanetController extends Controller
 {
@@ -90,6 +91,21 @@ class PlanetController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+
+
+        $planet = Planet::findOrFail($id); // Trouve la planète ou renvoie une erreur 404 si elle n'existe pas
+        // Construit le chemin complet de l'image
+        $imagePath = public_path("storage/" . $planet->image);
+
+        // Supprime l'image si elle existe
+        if (file_exists($imagePath)) {
+            $result = "La planete à correctement été supprimée !";
+            unlink($imagePath);
+        } else {
+            $result = "L'image n'existe pas, elle se trouve normalement à l'emplacement " . $imagePath;
+        }
+        $planet->delete(); // Supprime la planète de la base de données
+
+        return back()->with('success', $result);
     }
 }

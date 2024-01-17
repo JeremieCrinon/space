@@ -49,4 +49,10 @@
         {{ __('Create a planet') }}
     </a>
 
+    @if (session()->has('success'))
+        <div class="Create--message">
+            {{ session('success') }}
+        </div>
+    @endif
+
 </x-app-layout>
