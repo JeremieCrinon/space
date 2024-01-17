@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LanguageController;
 use App\Http\Middleware\Language;
 use App\Http\Controllers\PlanetController;
+use App\Http\Controllers\editWebsiteController;
 
 
 /*
@@ -42,9 +43,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified', 'language'])->name('dashboard');
 
-Route::get('/edit', function () {
-    return view('private/edit');
-})->middleware(['auth', 'verified', 'language'])->name('edit');
+Route::get('/edit', [editWebsiteController::class, 'index'])->middleware(['auth', 'verified', 'language'])->name('edit');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit')->middleware('language');
