@@ -1,6 +1,5 @@
 @include('doctype')
     <body class="Destination--body">
-        {{ $planet }}
         @include('header', ['pageName' => "destination"])
         
         <h1 class="Destination--title"><span>01</span>{{ __('CHOOSE YOUR DESTINATION') }}</h1>

@@ -6,6 +6,7 @@ use App\Http\Controllers\LanguageController;
 use App\Http\Middleware\Language;
 use App\Http\Controllers\PlanetController;
 use App\Http\Controllers\editWebsiteController;
+use App\Http\Controllers\CrewController;
 
 
 /*
@@ -52,5 +53,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::resource('planets', PlanetController::class)->middleware('auth', 'language');
+
+Route::resource('crews', CrewController::class)->middleware('auth', 'language');
 
 require __DIR__.'/auth.php';

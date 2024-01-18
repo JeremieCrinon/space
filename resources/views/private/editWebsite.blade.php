@@ -9,6 +9,7 @@
         </p>
 
         <!-- Affichage des planettes -->
+        <h2 class="Edit--planets--title">{{ __('Planets') }}</h2>
         <ul class="Edit--planets--container">
             <li class="Edit--planets--container--element">
                 <p class="Edit--planets--container--element--element Edit--planets--container--element--id">id</p>

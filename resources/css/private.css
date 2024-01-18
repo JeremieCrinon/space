@@ -282,6 +282,15 @@
     margin-top: 2rem;
 }
 
+.Edit--planets--title{
+    color: 000;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
 .Edit--planets--container{
     display: flex;
     flex-direction: column;
