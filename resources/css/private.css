@@ -312,4 +312,43 @@
 /* Create */
 
 /* Create  */
+
+/* Edit a planet */
+
+.Edit--planet--form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15%;
+    margin-top: 5rem;
+}
+
+.Edit--planet--form--image{
+    width: 30%;
+}
+
+.Edit--planet--form--label{
+    color: #FFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.Edit--planet--form--input{
+    margin-top: 1.5rem;
+}
+
+.Edit--planet--form--input--image{
+    width: 10%;
+    
+}
+
+.Edit--planet--form--button{
+    margin-top: 2rem;
+}
+/* Edit a planet */
 /* Edit */
