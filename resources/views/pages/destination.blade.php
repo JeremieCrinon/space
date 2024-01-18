@@ -11,7 +11,7 @@
         <section class="Destination--text" role="main">
             <nav class="Destination--nav" role="navigation">
                 @foreach($planets as $current_planet)
-                    <a href="{{ url('/destination/' . $current_planet->id) }}" class="Destination--nav__link @if($current_planet->id == $planet->id) Destination--nav__link__current @endif">@if(App::getLocale() == 'fr')
+                    <a href="{{ url('/destination/' . (App::getLocale() == 'fr' ? $current_planet['fr_name'] : $current_planet['en_name']) . '/' . $current_planet->id) }}" class="Destination--nav__link @if($current_planet->id == $planet->id) Destination--nav__link__current @endif">@if(App::getLocale() == 'fr')
                     {{ $current_planet['fr_name'] }}
                 @else
                     {{ $current_planet['en_name'] }}

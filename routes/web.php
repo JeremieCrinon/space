@@ -27,7 +27,7 @@ Route::get('/home', function () {
     return view('pages/home');
 })->middleware('language');
 
-Route::get('/destination/{subpage}', [PlanetController::class, 'show'])->middleware('language');
+Route::get('/destination/{name}/{subpage}', [PlanetController::class, 'show'])->middleware('language');
 
 Route::get('/crew/{subpage}', function ($subpage) {
     return view('pages/crew')->with('subpage', $subpage);

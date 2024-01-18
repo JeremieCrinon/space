@@ -33,7 +33,7 @@
                 <p class="Edit--planets--container--element--element Edit--planets--container--element--en_description">{{ $planet['en_description'] }}</p>
                 <p class="Edit--planets--container--element--element Edit--planets--container--element--distance">{{ $planet['distance'] }}</p>
                 <p class="Edit--planets--container--element--element Edit--planets--container--element--time">{{ $planet['time'] }}</p>
-                <a href="{{ url('/destination/' . $planet->id) }}" class="Edit--planets--container--element--element Edit--planets--container--element--show">{{ __('Show') }}</a>
+                <a href="{{ url('/destination/' . $planet->en_name . '/' . $planet->id) }}" class="Edit--planets--container--element--element Edit--planets--container--element--show">{{ __('Show') }}</a>
                 <a href="{{ route('planets.edit', $planet->id) }}" class="Edit--planets--container--element--element Edit--planets--container--element--edit">{{ __('Edit') }}</a>
                 <form action="{{ route('planets.destroy', $planet->id) }}" method="POST" class="Edit--planets--container--element--element Edit--planets--container--element--delete">
                     @csrf

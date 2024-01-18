@@ -23,7 +23,13 @@ class AppServiceProvider extends ServiceProvider
     {
         View::composer('header', function ($view) {
             $firstItemId = Planet::orderBy('id')->first()->id;
-            $view->with('firstItemId', $firstItemId);
+            $fr_name = Planet::orderBy('id')->first()->fr_name;
+            $en_name = Planet::orderBy('id')->first()->en_name;
+            $view->with([
+                'firstItemId' => $firstItemId,
+                'fr_name' => $fr_name,
+                'en_name' => $en_name,
+            ]);
         });
     }
 }
