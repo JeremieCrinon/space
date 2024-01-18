@@ -11,8 +11,6 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="Guest--back_office--body">
-        @include('header')
-        
         {{ $slot }}
     </body>
 </html>

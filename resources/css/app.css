@@ -1261,9 +1261,7 @@ html{
 
 /* Partie communne à toutes les pages */
 .Guest--back_office--body{
-    background-image: url(../../public/img/Home_background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: lightgrey;
     height: 100%;
     width: 100%;
 }
@@ -1271,7 +1269,7 @@ html{
 
 /* Register et un peu login */
 .Register--title{
-    color: #FFF;
+    color: #000;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 4rem;
     font-weight: 400;
@@ -1279,7 +1277,7 @@ html{
 }
 
 .Register--subtitle{
-    color: #D0D6F9;
+    color: #000;
     font-family: 'Barlow', sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
@@ -1305,7 +1303,7 @@ html{
 }
 
 .Register--form--label, .Login--form--label{
-    color: #FFF;
+    color: #000;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
@@ -1323,7 +1321,7 @@ html{
 }
 
 .Register--form--buttons--link, .Login--form--buttons--link{
-    color: #FFF;
+    color: #000;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
@@ -1357,7 +1355,7 @@ html{
 
 /* Confirmer l'email */
 .Verify_email--title{
-    color: #FFF;
+    color: #000;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 4rem;
     font-weight: 400;
@@ -1365,7 +1363,7 @@ html{
 }
 
 .Verify_email--text{
-    color: #D0D6F9;
+    color: #000;
     font-family: 'Barlow', sans-serif;
     font-size: 1.8rem;
     font-weight: 400;
@@ -1376,7 +1374,7 @@ html{
 }
 
 .Verify_email--new_link{
-    color: #FFF;
+    color: #000;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.4rem;
     font-weight: 400;
@@ -1405,8 +1403,8 @@ html{
 
 .Verify_email--button{
     background-color: transparent;
-    color: #FFF;
-    border: 1px solid #FFF;
+    color: #000;
+    border: 1px solid #000;
     padding: 1rem;
     font-size: 1.2rem;
 }

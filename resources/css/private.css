@@ -10,25 +10,122 @@
     /* background-image: url(../../public/img/Home_background.png);
     background-repeat: no-repeat;
     background-size: cover; */
-    background-color: #000;
+    background-color: #EEE;
     height: 100%;
     width: 100%;
+    display: flex;
+    flex-direction: row;
 }
 
 /* Background */
 
+/* Header */
+
+.Private--header{
+    width: 10%;
+    height: 100%;
+    background-color: #FFF;
+    /* border-right: 2px solid #664; */
+    position: relative;
+}
+
+.Private--header::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: #664;
+    position: absolute;
+    top: 0;
+    right: calc(-3.5% - 2px);
+}
+
+.Private--main{
+    width: 88%;
+    margin: 1%;
+    margin-top: 5rem;
+    border-radius: 5px;
+    height: min-content;
+    background-color: #FFF;
+    padding: 5rem;
+}
+
+.Private--header--nav{
+    width: 100%;
+    height: 90%;
+    margin-top: 0;
+}
+
+.Private--header--nav ul{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30%;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.Private--header--nav ul li{
+    width: 100%;
+}
+
+.Private--header--nav ul li a{
+    color: #000;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-decoration: none;
+    width: 80%;
+    margin-left: 10%;
+    line-height: 3rem;
+}
+
+.Private--header--li--current{
+    background-color: #664;
+    color: #FFF;
+    display: block;
+}
+
+.Private--header--li--current a{
+    color: #FFF!important;
+    
+}
+
 /* Responsive */
-@media screen and (max-width: 768px){
-    .Private--body{
-        background-image: url(../../public/img/Home_background_tablet.png);
+
+@media screen and (max-width: 1440px)
+{
+    .Private--header--nav ul li a {
+        font-size: 1.2rem;
+    }
+
+    .Private--header--nav ul li{
+        line-height: 2.4rem;
+    }
+
+}
+
+@media screen and (max-width: 1150px)
+{
+    .Private--header--nav ul li a{
+        font-size: 1rem;
+    }
+    
+    .Private--header--nav ul li{
+        line-height: 2rem;
     }
 }
+
 /* Responsive */
+
+/* Header */
 /* Partie commune à toutes les pages */
 
 /* Dashboard */
 .Dashboard--title{
-    color: #FFF;
+    color: #000;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     font-size: 2.8rem;
@@ -36,7 +133,7 @@
 }
 
 .Dashboard--description{
-    color: #FFF;
+    color: #000;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
@@ -167,7 +264,7 @@
 
 /* Edit */
 .Edit--title{
-    color: #FFF;
+    color: 000;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     font-size: 2.8rem;
@@ -175,7 +272,7 @@
 }
 
 .Edit--description{
-    color: #FFF;
+    color: #000;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
@@ -204,7 +301,7 @@
 }
 
 .Edit--planets--container--element--element{
-    color: #FFF;
+    color: #000;
     font-size: 1.5rem;
     text-align: left;
 }
@@ -251,10 +348,11 @@
 
 .Edit--planets--container--element--show, .Edit--planets--container--element--edit{
     display: block;
-    height: 100%;
-    color: #000;
-    background-color: #FFF;
-    margin: 0 calc(5%/6);
+    line-height: 1.8rem;
+    color: #FFF;
+    background-color: #664;
+    margin: 0 calc(5%/12);
+    padding: 0 calc(5%/12);
     border-radius: 10%;
     text-align: center;
     text-decoration: none;
@@ -286,6 +384,7 @@
     font-size: 2rem;
     text-align: center;
     line-height: 4rem;
+    border: 1px solid #000;
 }
 
 .Edit--planets--link:hover{
@@ -294,12 +393,25 @@
     border: 1px solid #FFF;
 }
 
+@media screen and (max-width: 1515px) {
+    .Edit--planets--container--element--element{
+        font-size: 1.2rem;
+    }
+
+} 
+
+@media screen and (max-width: 1208px){
+    .Edit--planets--container--element--element{
+        font-size: 1rem;
+    }
+}
+
 
 
 /* Create */
 
 .Create--message{
-    color: #FFF;
+    color: #000;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
@@ -329,7 +441,7 @@
 }
 
 .Edit--planet--form--label{
-    color: #FFF;
+    color: #000;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
