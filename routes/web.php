@@ -30,9 +30,11 @@ Route::get('/home', function () {
 
 Route::get('/destination/{name}/{subpage}', [PlanetController::class, 'show'])->middleware('language');
 
-Route::get('/crew/{subpage}', function ($subpage) {
-    return view('pages/crew')->with('subpage', $subpage);
-})->middleware('language');
+Route::get('/crew/{name}/{subpage}', [CrewController::class, 'show'])->middleware('language');
+
+// Route::get('/crew/{subpage}', function ($subpage) {
+//     return view('pages/crew')->with('subpage', $subpage);
+// })->middleware('language');
 
 Route::get('/tech/{subpage}', function ($subpage) {
     return view('pages/tech')->with('subpage', $subpage);

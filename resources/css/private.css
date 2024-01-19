@@ -472,4 +472,22 @@
     margin-top: 2rem;
 }
 /* Edit a planet */
+
+/* Edit a crew */
+
+.Edit--planets--container--element--fr_role, .Edit--planets--container--element--en_role{
+    width: 13%;
+}
+
+.Edit--planets--container--element--name{
+    width: 10%;
+
+}
+
+.Edit--planets--container--element--fr_crew_description, .Edit--planets--container--element--en_crew_description{
+    width: 30%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 /* Edit */

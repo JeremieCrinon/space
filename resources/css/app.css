@@ -861,6 +861,7 @@ html{
     opacity: 0.5;
     font-family: "Bellfair", serif;
     font-size: 3.2rem;
+    text-transform: uppercase;
 }
 
 .Crew--text--name{
@@ -868,6 +869,7 @@ html{
     font-family: "Bellfair", serif;
     font-size: 5rem;
     margin-top: 30px;
+    text-transform: uppercase;
 }
 
 .Crew--text--description{

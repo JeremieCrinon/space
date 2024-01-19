@@ -4,7 +4,8 @@
 
         <h1 class="Destination--title"><span>02</span>{{ __('MEET THE CREW') }}</h1><!-- Je remets la même class que pour destination, car le titre est le même -->
         <section class="Crew--image__mobile Crew--image" aria-hidden="true">
-            @if(isset($subpage) && $subpage == "mission_specialist")
+            <img aria-hidden="true" src="{{ asset('storage/' . $crew['image']) }}" alt="{{ $crew['name'] }}">
+            <!-- @if(isset($subpage) && $subpage == "mission_specialist")
                 <img src="{{ asset('img/mission_specialist.png') }}" alt="Mark Shuttleworth">
             @elseif(isset($subpage) && $subpage == "pilot")
                 <img src="{{ asset('img/pilot.png') }}" alt="Victor Glover">
@@ -12,7 +13,7 @@
                 <img src="{{ asset('img/engineer.png') }}" alt="Anousheh Ansari">
             @else
                 <img src="{{ asset('img/commander.png') }}" alt="Douglas Hurley">
-            @endif
+            @endif -->
         </section>
         <div class="Crew--bar__mobile"></div>
         <nav class="Crew--text--nav__mobile Crew--text--nav" role="navigation">
@@ -27,7 +28,29 @@
 
         <div class="Crew--container">
             <section class="Crew--text" role="main">
-                @if(isset($subpage) && $subpage == "mission_specialist")
+                <p class="Crew--text--role">@if(App::getLocale() == 'fr')
+                    {{ $crew['fr_role'] }}
+                @else
+                    {{ $crew['en_role'] }}
+                @endif  </p>
+                <p class="Crew--text--name">{{$crew['name']}}</p>
+                <p class="Crew--text--description">@if(App::getLocale() == 'fr')
+                    {{ $crew['fr_description'] }}
+                @else
+                    {{ $crew['en_description'] }}
+                @endif</p>
+                <nav class="Crew--text--nav" role="navigation">
+                    <ul>
+                        @foreach($crews as $current_crew)
+                            <li><a class="Crew--text--nav--link @if($current_crew->id == $crew->id) Crew--text--nav--link--current @endif" href="{{ url('/crew/' . (App::getLocale() == 'fr' ? $current_crew['fr_role'] : $current_crew['en_role']) . '/' . $current_crew->id) }}" role="button"></a></li>
+                        @endforeach
+                        <!-- <li><a class="Crew--text--nav--link Crew--text--nav--link--current" href="{{ url('/crew/commander') }}" role="button"></a></li>
+                        <li><a class="Crew--text--nav--link" href="{{ url('/crew/mission_specialist') }}" role="button"></a></li>
+                        <li><a class="Crew--text--nav--link" href="{{ url('/crew/pilot') }}" role="button"></a></li>
+                        <li><a class="Crew--text--nav--link" href="{{ url('/crew/engineer') }}" role="button"></a></li> -->
+                    </ul>
+                </nav>
+                <!-- @if(isset($subpage) && $subpage == "mission_specialist")
                     <p class="Crew--text--role">{{ __('MISSION SPECIALIST') }}</p>
                     <p class="Crew--text--name">MARK SHUTTLEWORTH</p>
                     <p class="Crew--text--description">{{ __('Mark Righard Shuttleworth is the fonder and CEO of Canonical, the company behind the operating system based on Linux Ubuntu. Shuttleworth became the first south affrican to travel to space as a space tourist.') }}</p>
@@ -75,11 +98,12 @@
                             <li><a class="Crew--text--nav--link" href="{{ url('/crew/engineer') }}" role="button"></a></li>
                         </ul>
                     </nav>
-                @endif
+                @endif -->
             </section>
 
             <section class="Crew--image" aria-hidden="true">
-                @if(isset($subpage) && $subpage == "mission_specialist")
+                <img aria-hidden="true" src="{{ asset('storage/' . $crew['image']) }}" alt="{{ $crew['name'] }}">
+                <!-- @if(isset($subpage) && $subpage == "mission_specialist")
                     <img src="{{ asset('img/mission_specialist.png') }}" alt="Mark Shuttleworth">
                 @elseif(isset($subpage) && $subpage == "pilot")
                     <img src="{{ asset('img/pilot.png') }}" alt="Victor Glover">
@@ -87,7 +111,7 @@
                     <img src="{{ asset('img/engineer.png') }}" alt="Anousheh Ansari">
                 @else
                     <img src="{{ asset('img/commander.png') }}" alt="Douglas Hurley">
-                @endif
+                @endif -->
             </section>
         </div>
     
