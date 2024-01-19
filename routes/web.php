@@ -49,7 +49,9 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified', 'language'])->name('dashboard');
 
-Route::get('/edit', [editWebsiteController::class, 'index'])->middleware(['auth', 'verified', 'language'])->name('edit');
+Route::get('/editPlanets', [editWebsiteController::class, 'planets'])->middleware(['auth', 'verified', 'language'])->name('editPlanets');
+Route::get('/editCrews', [editWebsiteController::class, 'crews'])->middleware(['auth', 'verified', 'language'])->name('editCrews');
+Route::get('/editTeches', [editWebsiteController::class, 'teches'])->middleware(['auth', 'verified', 'language'])->name('editTeches');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit')->middleware('language');

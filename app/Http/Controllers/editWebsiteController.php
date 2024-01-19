@@ -9,12 +9,24 @@ use App\Models\Tech;
 
 class editWebsiteController extends Controller
 {
-    public function index()
+    public function planets()
     {
         $planets = Planet::all();
+        
+        return view('private.editWebsite', compact('planets'));
+    }
+
+    public function crews()
+    {
         $crews = Crew::all();
+
+        return view('private.editCrew', compact('crews'));
+    }
+
+    public function teches()
+    {
         $teches = Tech::all();
 
-        return view('private.editWebsite', compact('planets', 'crews', 'teches'));
+        return view('private.editTech', compact('teches'));
     }
 }

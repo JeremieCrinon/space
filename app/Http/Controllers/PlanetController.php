@@ -128,7 +128,7 @@ class PlanetController extends Controller
         $planet->save();
 
         // Rediriger avec un message
-        return redirect()->route('edit')->with('success', 'Planet updated successfully');
+        return redirect()->route('editPlanets')->with('success', 'Planet updated successfully');
     }
 
     /**

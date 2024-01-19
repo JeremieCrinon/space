@@ -118,7 +118,7 @@ class TechController extends Controller
         $tech->save();
 
         // Rediriger avec un message
-        return redirect()->route('edit')->with('success', 'Planet updated successfully');
+        return redirect()->route('editTeches')->with('success', 'Planet updated successfully');
     }
 
     /**

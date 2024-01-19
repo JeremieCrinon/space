@@ -93,6 +93,29 @@
     
 }
 
+.Private--header--li--active{
+    background-color: #886;
+    margin-top: 0.2rem;
+    display: block;
+}
+
+.Private--header--li--active a{
+    color: #FFF!important;
+    
+}
+
+.Private--header--edit--under{
+    width: 100%;
+    background-color: lightgrey;
+    list-style-type: square!important;
+}
+
+.Private--header--edit--under a{
+    margin-left: 50%;
+    font-size: 0.8rem!important;
+    text-align: right!important;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 1440px)

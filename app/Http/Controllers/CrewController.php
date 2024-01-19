@@ -122,7 +122,7 @@ class CrewController extends Controller
         $crew->save();
 
         // Rediriger avec un message
-        return redirect()->route('edit')->with('success', 'Crew updated successfully');
+        return redirect()->route('editCrews')->with('success', 'Crew updated successfully');
     }
 
     /**
