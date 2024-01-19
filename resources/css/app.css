@@ -1116,6 +1116,7 @@ html{
     font-size: 5.6rem;
     font-weight: 400;
     margin-top: 25px;
+    text-transform: uppercase;
 }
 
 .Tech--text--description{
@@ -1132,6 +1133,7 @@ html{
     right: 0;
     top: 272px;
     width: 35.7%;
+    overflow: hidden;
 }
 
 /* Responsive */

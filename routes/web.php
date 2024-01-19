@@ -7,6 +7,7 @@ use App\Http\Middleware\Language;
 use App\Http\Controllers\PlanetController;
 use App\Http\Controllers\editWebsiteController;
 use App\Http\Controllers\CrewController;
+use App\Http\Controllers\TechController;
 
 
 /*
@@ -32,13 +33,15 @@ Route::get('/destination/{name}/{subpage}', [PlanetController::class, 'show'])->
 
 Route::get('/crew/{name}/{subpage}', [CrewController::class, 'show'])->middleware('language');
 
+Route::get('/tech/{name}/{subpage}', [TechController::class, 'show'])->middleware('language');
+
 // Route::get('/crew/{subpage}', function ($subpage) {
 //     return view('pages/crew')->with('subpage', $subpage);
 // })->middleware('language');
 
-Route::get('/tech/{subpage}', function ($subpage) {
-    return view('pages/tech')->with('subpage', $subpage);
-})->middleware('language');
+// Route::get('/tech/{subpage}', function ($subpage) {
+//     return view('pages/tech')->with('subpage', $subpage);
+// })->middleware('language');
 
 Route::get('language/{lang}', [LanguageController::class, 'switch'])->name('language.switch');
 
@@ -57,5 +60,7 @@ Route::middleware('auth')->group(function () {
 Route::resource('planets', PlanetController::class)->middleware('auth', 'language');
 
 Route::resource('crews', CrewController::class)->middleware('auth', 'language');
+
+Route::resource('teches', TechController::class)->middleware('auth', 'language');
 
 require __DIR__.'/auth.php';
